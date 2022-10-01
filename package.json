@@ -1,0 +1,26 @@
+{
+    "name": "dismord",
+    "version": "0.0.0",
+    "description": "Dismord is a simple but awesome NodeJs build tool",
+    "private": "true",
+    "keywords": [
+      "dc",
+      "js",
+      "bot",
+      "node",
+      "client",
+      "discord",
+      "discordjs",
+      "discordbot",
+      "discordclient"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dismord/dismord.git"
+    },
+    "bugs": {
+      "url": "https://github.com/dismord/dismord/issues"
+    },
+    "homepage": "https://github.com/dismord/dismord#readme",
+    "author": "dismord"
+}

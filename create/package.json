@@ -1,0 +1,39 @@
+{
+  "name": "create-dismord",
+  "version": "0.3.0",
+  "description": "Dismord is a simple but awesome NodeJs build tool",
+  "type": "module",
+  "main": "main.mjs",
+  "files": [
+    "main.mjs",
+    "*.mod"
+  ],
+  "keywords": [
+    "dc",
+    "js",
+    "bot",
+    "node",
+    "client",
+    "discord",
+    "discordjs",
+    "discordbot",
+    "discordclient"
+  ],
+  "bin": {
+    "create-dismord": "main.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dismord/dismord.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dismord/dismord/issues"
+  },
+  "homepage": "https://github.com/dismord/dismord#readme",
+  "author": "dismord",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.1.2",
+    "nanospinner": "^1.1.0"
+  }
+}

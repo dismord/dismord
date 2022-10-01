@@ -1,0 +1,16 @@
+{
+  "name": "dismord",
+  "version": "0.0.0",
+  "description": "",
+  "private": false,
+  "main": "main.js",
+  "scripts": {
+    "bot": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "discord.js": "^14.4.0"
+  }
+}
