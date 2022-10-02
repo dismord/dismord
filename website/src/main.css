@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    scrollbar-width: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+}
+
+div.web {
+    display: block;
+}
+
+div.web div.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.web div.wrapper:nth-child(2){
+    position: relative;
+}
+
+div.logo {
+    opacity: 1;
+    transition: opacity 0.75s ease, transform 0.75s ease;
+    transform: translate(0, 0);
+    pointer-events: none;
+    user-select: none;
+}
+
+div.logo.hide {
+    opacity: 0;
+    transform: translate(0, 15%);
+}
+
+div.install {
+    opacity: 1;
+    width: 350px;
+    transition: opacity 2.5s ease, transform 1.25s ease;
+    transform: translate(0, 0);
+    background: #222836;
+    border-radius: 5px;
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+div.install.hide {
+    opacity: 0;
+    transform: translate(0, 15%);
+    pointer-events: none;
+}
+
+div.install input {
+    display: none;
+}
+
+div.install input#npm:checked ~ header.tabs div.slider{
+    left: 27.5%;
+}
+
+div.install input#yarn:checked ~ header.tabs div.slider{
+    left: 62.5%;
+    width: 82.5px;
+}
+
+div.install input#pnpm:checked ~ header.tabs div.slider{
+    left: 100%;
+    width: 82.5px;
+}
+
+header.tabs {
+    position: relative;
+    padding: 5%;
+    display: flex;
+    width: 62.5%;
+    height: 35px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+header.tabs label {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DBDEE0;
+    cursor: pointer;
+    user-select: none;
+}
+
+header.tabs label:nth-child(1) {
+    padding: 0 22.5px 0 5px;
+}
+
+header.tabs label:nth-child(2) {
+    padding: 0 22.5px;
+}
+
+header.tabs label:nth-child(3) {
+    padding: 0 22.5px;
+}
+
+header.tabs div.slider{
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 75px;
+    transition: left 0.25s ease, width 0.25s ease;
+    transform: translateX(-80%);
+    background: #2B3245;
+    border-radius: inherit;
+    z-index: -10;
+}
+
+div.tip {
+    opacity: 1;
+    position: absolute;
+    padding: 2.5px 7.5px;
+    right: 12.5%;
+    bottom: 52.5%;
+    font-size: 12.5px;
+    transition: opacity 0.375s ease, bottom 0.25s ease;
+    color: #F5F9FC;
+    background: #4D5775;
+    border-radius: 2.5px;
+    pointer-events: none;
+    user-select: none;
+}
+
+div.tip.hide {
+    opacity: 0;
+    bottom: 50%;
+}
+
+div.links {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transition: opacity 0.625s ease, bottom 0.625s ease;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+}
+
+div.links.hide {
+    opacity: 0;
+    bottom: 3.75%;
+    pointer-events: none;
+}
+
+div.links a {
+    padding: 0 5px;
+    font-size: 27.5px;
+    transition: color 0.375s ease;
+    color: #4D5775;
+}
+
+div.links a:hover {
+    color: #DBDEE0;
+}

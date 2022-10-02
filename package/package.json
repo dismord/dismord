@@ -1,6 +1,6 @@
 {
   "name": "create-dismord",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Dismord is a simple but awesome NodeJs build tool",
   "type": "module",
   "main": "main.mjs",
@@ -33,6 +33,7 @@
   "author": "dismord",
   "license": "ISC",
   "dependencies": {
+    "fs-extra": "^10.1.0",
     "inquirer": "^9.1.2",
     "nanospinner": "^1.1.0"
   }
