@@ -1,7 +1,7 @@
 <div align="center">
   <p>
     <a href="https://github.com/dismord/dismord">
-      <img src="./imgs/banner.png" alt="Dismord" width="546">
+      <img src="./img/banner.png" alt="Dismord" width="546">
     </a>
   </p>
   <p>
