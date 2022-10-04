@@ -1,6 +1,6 @@
 {
   "name": "create-dismord",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Dismord is a simple but awesome NodeJs build tool",
   "type": "module",
   "main": "main.mjs",
@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/dismord/dismord/issues"
   },
-  "homepage": "https://github.com/dismord/dismord#readme",
+  "homepage": "https://dismord.js.org",
   "author": "dismord",
   "license": "ISC",
   "dependencies": {
